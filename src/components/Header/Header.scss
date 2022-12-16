@@ -13,11 +13,40 @@ header{
         font-size: 1.2rem;
         font-weight: bold;
         padding-top: 10px;
+        @media screen and (max-width: 768px) {
+            padding: 0 2rem;
+            row-gap: 0.3px;
+        }
+        @media screen and (max-width: 400px) {
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
         li {
             cursor: pointer;
             transition: 0.3s ease-out;
-            @media screen and (max-width: 900px) {
+            @media screen and (max-width: 768px) {
                 display: none;
+                border: 1px solid #000000;
+                border-radius: 2rem;
+                margin: 2rem 1rem; 
+            }
+            @media screen and (max-width: 400px) {
+                display: none;
+                border: none;
+                padding: 1rem;
+                font-size: 2px;
+            }
+            div {
+                display: none;
+                @media (max-width: 900px) {
+                    display: block;
+                    font-size: 2rem;
+                }
+                @media (max-width: 400px) {
+                    display: block;
+                    font-size: 2rem;
+                }
             }
         }
         li:hover {
@@ -25,7 +54,8 @@ header{
         }
         &.other-devices {
             position: absolute;
-            display: block;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
             background-color: antiquewhite;
             left: 0;
             top: 75px;

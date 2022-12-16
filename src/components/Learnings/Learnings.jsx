@@ -3,9 +3,9 @@ import './Learnings.scss';
 
 const Learnings = () => {
   return (
-    <div>
-      
-    </div>
+    <section id="learnings" className='section-p'>
+      Learnings
+    </section>
   )
 }
 

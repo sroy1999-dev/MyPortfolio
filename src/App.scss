@@ -5,3 +5,20 @@
 body {
     background-color: #fff;
 }
+
+.section-p {
+    padding-top: 2rem;
+}
+
+.btn {
+    width: max-content;
+    font-size: 20px;
+    padding: 0.5rem 2rem;
+    border-radius: 30px;
+    background-color: orangered;
+    border: none;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 10px 20px 20px rgb(236, 236, 236);
+}
