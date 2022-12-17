@@ -1,0 +1,108 @@
+#learnings {
+    background-color: var(--background);
+    .heading {
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+    }
+    .topics {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem 0;
+        .frontend {
+            border: 1px solid var(--black);
+            width: max-content;
+            border-radius: 20px;
+            padding: 3rem;
+            transition: 0.5s ease;
+            h3 {
+                padding: 10px 0;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                font-weight: 800;
+                text-align: center;
+            }
+            ul {
+                padding: 5px 0;
+                li {
+                    padding-top: 3px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    padding: 10px 16px;
+                    .tick-symbol {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .frontend:hover {
+            border: 1px solid orange;
+        }
+        .backend {
+            border: 1px solid var(--black);
+            width: max-content;
+            padding: 3rem;
+            border-radius: 20px;
+            transition: 0.5s ease;
+            h3 {
+                padding: 10px 0;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                font-weight: 800;
+                text-align: center;
+            }
+            ul {
+                padding: 5px 0;
+                li {
+                    padding-top: 3px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    padding: 10px 16px;
+                    .tick-symbol {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .backend:hover {
+            border: 1px solid orange;
+        }
+        .others {
+            border: 1px solid var(--black);
+            width: max-content;
+            padding: 3rem;
+            border-radius: 20px;
+            transition: 0.5s ease;
+            h3 {
+                padding: 10px 0;
+                text-transform: uppercase;
+                font-size: 1.3rem;
+                font-weight: 800;
+                text-align: center;
+            }
+            ul {
+                padding: 5px 0;
+                li {
+                    padding-top: 3px;
+                    font-size: 18px;
+                    font-weight: 400;
+                    padding: 10px 16px;
+                    .tick-symbol {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .others:hover {
+            border: 1px solid orange;
+        }
+        @media screen and (max-width: 900px) {
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}

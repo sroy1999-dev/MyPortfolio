@@ -1,9 +1,18 @@
 :root {
     --background-green : rgba(206, 250, 141);
+    --background: antiquewhite;
+    --black: #000000;
+    --white: #ffffff;
+    --dark-orange: orangered;
+    --green: green;
+    --skyblue: skyblue;
+    --grey: grey;
+    --hover-blue: blue;
+    --shadow-color: rgb(236, 236, 236);
 }
 
 body {
-    background-color: #fff;
+    background-color: var(--white);
 }
 
 .section-p {
@@ -15,10 +24,10 @@ body {
     font-size: 20px;
     padding: 0.5rem 2rem;
     border-radius: 30px;
-    background-color: orangered;
+    background-color: var(--dark-orange);
     border: none;
-    color: #ffffff;
+    color: var(--white);
     font-weight: 600;
     cursor: pointer;
-    box-shadow: 10px 20px 20px rgb(236, 236, 236);
+    box-shadow: 10px 20px 20px var(--shadow-color);
 }

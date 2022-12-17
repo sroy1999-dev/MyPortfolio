@@ -1,6 +1,6 @@
 header{
     display: flex;
-    background-color: antiquewhite;
+    background-color: var(--background);
     justify-content: space-between;
     padding: 2rem 4rem;
     position: sticky;
@@ -27,7 +27,7 @@ header{
             transition: 0.3s ease-out;
             @media screen and (max-width: 768px) {
                 display: none;
-                border: 1px solid #000000;
+                border: 1px solid var(--black);
                 border-radius: 2rem;
                 margin: 2rem 1rem; 
             }
@@ -50,13 +50,13 @@ header{
             }
         }
         li:hover {
-            color: green;
+            color: var(--green);
         }
         &.other-devices {
             position: absolute;
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            background-color: antiquewhite;
+            background-color: var(--background);
             left: 0;
             top: 75px;
             transition: 0.4s ease;
